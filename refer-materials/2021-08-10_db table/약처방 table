@@ -1,0 +1,26 @@
+create table prescription(
+	no serial primary key,
+    medicine_no integer,
+	clinic_no integer,
+    dose varchar(45),
+	daily_does varchar(45),
+	total_does varchar(45)
+	)
+
+alter table prescription
+ add constraint medicine_no
+ foreign key(medicine_no)
+ references medicine(no)
+ 
+ alter table prescription
+ add constraint clinic_no
+ foreign key(clinic_no)
+ references clinic(no)
+	
+	
+	
+	
+	
+	
+	
+)

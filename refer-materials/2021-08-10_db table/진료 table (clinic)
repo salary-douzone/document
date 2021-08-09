@@ -1,0 +1,29 @@
+create type cure_ as enum  ('있음', '없음')
+create type visit_ as enum ('초진', '재진')
+
+
+create table clinic(
+no serial primary key,
+receipt_no integer,
+member_no integer,
+reg_date date,
+cure cure_,
+visit visit_,
+doctor_message text,
+nurse_message text,
+note text
+	
+)
+drop table clinic
+
+alter table clinic
+add Constraint receipt_no
+foreign key(receipt_no)
+references receipt(no)
+
+
+
+alter table clinic
+add Constraint member_no
+foreign key (member_no)
+references member(no)

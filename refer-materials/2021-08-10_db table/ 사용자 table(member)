@@ -1,0 +1,25 @@
+create type division as enum  ('nurse','doctor','admin')
+create type work_ as enum  ('nurse','doctor','admin')
+
+
+drop table member;
+
+create table member (
+	no serial primary key,
+	name varchar(45),
+	id varchar(45),
+	password varchar(45), 
+	security_number varchar(45),
+	email varchar(45),
+	cellphone varchar(45),
+	division_ division,
+	profile varchar (500),
+	account varchar(45), 
+	working work_
+	)
+	
+	
+	 
+	
+	
+)

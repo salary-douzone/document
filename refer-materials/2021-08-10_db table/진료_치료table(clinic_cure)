@@ -1,0 +1,14 @@
+create table clinic_cure(
+	
+	cure_no integer,
+	clinic_no integer
+)
+alter table clinic_cure
+ADD constraint cure_no
+foreign key (cure_no)
+references cure(no)
+
+alter table clinic_cure
+ADD constraint clinic_no
+foreign key (clinic_no)
+references clinic(no)
