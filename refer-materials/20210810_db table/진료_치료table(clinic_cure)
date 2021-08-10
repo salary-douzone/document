@@ -3,6 +3,7 @@ create table clinic_cure(
 	cure_no integer,
 	clinic_no integer
 )
+
 alter table clinic_cure
 ADD constraint cure_no
 foreign key (cure_no)

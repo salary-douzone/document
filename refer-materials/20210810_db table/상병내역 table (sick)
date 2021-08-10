@@ -3,6 +3,7 @@ create table sick(
 	category_main_no integer
 	
 )
+
 alter table sick
 ADD constraint clinic_no
 foreign key (clinic_no)

@@ -19,12 +19,12 @@ Create table receipt(
  alter table receipt
  add constraint member_no
  foreign key(member_no)
- references member(n)
+ references member(no)
  
   alter table receipt
- add constraint member_no
- foreign key(member_no)
- references member(no)
+ add constraint patient_no
+ foreign key(patient_no)
+ references patient(no)
  
  
  

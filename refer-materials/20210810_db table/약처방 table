@@ -2,7 +2,7 @@ create table prescription(
 	no serial primary key,
     medicine_no integer,
 	clinic_no integer,
-    dose varchar(45),
+         dose varchar(45),
 	daily_does varchar(45),
 	total_does varchar(45)
 	)
@@ -23,4 +23,3 @@ alter table prescription
 	
 	
 	
-)
