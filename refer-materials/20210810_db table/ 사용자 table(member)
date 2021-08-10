@@ -1,11 +1,6 @@
+
 create type division as enum  ('nurse','doctor','admin')
-create type working_ as enum  ('재직','퇴직')
 
-
-
-drop table member;
-select * from member;
-delete from  member where no =6;
 
 
 create table member (
@@ -13,13 +8,13 @@ create table member (
 	name varchar(45),
 	id varchar(45),
 	password varchar(45), 
-	security_number varchar(45),
+	registration_no varchar(45),
 	email varchar(45),
 	cellphone varchar(45),
-	division_ division,
+	role division,
 	profile varchar (500),
 	account varchar(45), 
-	working working_
+	working boolean
 	)
 	
 	

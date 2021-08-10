@@ -1,5 +1,5 @@
 create table cure(
-	no serial primary key
+	no serial primary key,
 	name varchar(45),
 	price varchar(45)
 )

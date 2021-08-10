@@ -1,5 +1,4 @@
-/* enum 생성 */
-create type insurance_ as enum('유','무');
+
 
 
 
@@ -7,9 +6,9 @@ create type insurance_ as enum('유','무');
 CREATE TABLE patient (
         no serial PRIMARY KEY ,
         name varchar(200),
-        security_number varchar(200),
-	cellphone varchar(200),
-	address varchar(400),
-	insurance insurance_ ,
-	note text
+        registration_no varchar(200),
+	    cellphone varchar(200),
+	    address varchar(400),
+	    insurance boolean
+	    memo text
 )

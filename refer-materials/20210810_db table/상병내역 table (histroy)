@@ -1,0 +1,15 @@
+create table histroy(
+	clinic_no integer,
+	disease_no integer
+	
+)
+
+alter table histroy
+ADD constraint clinic_no
+foreign key (clinic_no)
+references clinic(no)
+
+alter table histroy
+ADD constraint disease_no
+foreign key(disease_no)
+references disease(no)

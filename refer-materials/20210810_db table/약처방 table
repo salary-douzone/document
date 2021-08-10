@@ -3,7 +3,7 @@ create table prescription(
     medicine_no integer,
 	clinic_no integer,
          dose varchar(45),
-	daily_does varchar(45),
+	daily_dose varchar(45),
 	total_does varchar(45)
 	)
 

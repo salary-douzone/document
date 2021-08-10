@@ -1,14 +1,14 @@
 /* enum create */
 create type progress_ as enum('진료대기', '진료중', '수납대기','완료');
 
-/* create receipt table */
-Create table receipt(
+/* create order table */
+Create table orders(
  no serial primary key,
  member_no integer,
  patient_no integer,
  reg_date date,
  nurse_message text,
- receive varchar(45),
+ payment varchar(45),
  progress progress_,
  price varchar(45)
 
@@ -16,16 +16,15 @@ Create table receipt(
  )
  
 /* foreign key 생성 */ 
- alter table receipt
+ alter table orders
  add constraint member_no
  foreign key(member_no)
  references member(no)
  
-  alter table receipt
+  alter table orders
  add constraint patient_no
  foreign key(patient_no)
  references patient(no)
- 
  
  
  drop table receipt;
